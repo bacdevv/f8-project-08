@@ -139,12 +139,6 @@ table {
   box-sizing: border-box;
 }
 
-:root {
-  --text-color: #1a162e;
-  --icon-color: brightness(0) saturate(100%) invert(6%) sepia(37%) saturate(2393%)
-  	hue-rotate(227deg) brightness(92%) contrast(93%);
-}
-
 html {
   font-size: 62.5%;
 }
@@ -1211,6 +1205,18 @@ button {
     --grid-gutter-y: 90px;
   }
 }
+html {
+  --text-color: #1a162e;
+  --icon-color: brightness(0) saturate(100%) invert(6%) sepia(37%) saturate(2393%)
+  	hue-rotate(227deg) brightness(92%) contrast(93%);
+}
+
+html.dark {
+  --text-color: #1a162e;
+  --icon-color: brightness(0) saturate(100%) invert(6%) sepia(37%) saturate(2393%)
+  	hue-rotate(227deg) brightness(92%) contrast(93%);
+}
+
 .top-act__btn, .top-act__group, .top-act, .navbar__link, .navbar__list, .top-bar {
   display: flex;
   align-items: center;
