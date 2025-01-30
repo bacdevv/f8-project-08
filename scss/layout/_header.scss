@@ -1,24 +1,48 @@
+@use "../abstracts";
+
 %flexItemCenter {
 	display: flex;
 	align-items: center;
 }
 
 .header {
-	background: #eee;
-	padding: 3rem 0;
+	background: var(--header-bg-color);
 }
 
 .top-bar {
+	padding: 3rem 0;
 	@extend %flexItemCenter;
+
+	@include abstracts.breakpoint(lg) {
+		padding: 2rem 0;
+	}
+
+	@include abstracts.breakpoint(sm) {
+		padding: 1.6rem 0;
+	}
+
+	&__more {
+		display: none;
+
+		@include abstracts.breakpoint(lg) {
+			display: block;
+		}
+	}
 }
 
 .navbar {
 	margin-left: 14.4rem;
-	margin-right: auto;
+
+	@include abstracts.breakpoint(xl) {
+		margin-left: 3rem;
+	}
+
+	@include abstracts.breakpoint(lg) {
+		display: none;
+	}
 
 	&__list {
 		@extend %flexItemCenter;
-
 		gap: 3rem;
 	}
 
@@ -38,8 +62,8 @@
 
 .top-act {
 	@extend %flexItemCenter;
-
 	gap: 2rem;
+	margin-left: auto;
 
 	&__group {
 		@extend %flexItemCenter;
@@ -50,11 +74,15 @@
 		padding: 1rem 2rem;
 
 		border-radius: 0.8rem;
-		background: #fff;
-		box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+		background: var(--top-act-group-bg-color);
+		box-shadow: 0px 20px 60px 10px var(--top-act-shadow);
 
 		&--single {
 			padding: 1.3rem;
+		}
+
+		@include abstracts.breakpoint(md) {
+			display: none;
 		}
 	}
 
@@ -64,7 +92,7 @@
 	}
 
 	&__title {
-		color: #1a162e;
+		color: var(--text-color);
 		font-size: 1.5rem;
 		font-weight: 500;
 		line-height: 1.46;
@@ -73,7 +101,7 @@
 	&__separate {
 		width: 0.1rem;
 		height: 3rem;
-		background: #ededf6;
+		background: var(--top-act-group-separate);
 	}
 
 	&__avatar {
