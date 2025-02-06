@@ -17,4 +17,10 @@ html.dark {
 	--dropdown-arrow-color: brightness(0) saturate(100%) invert(14%) sepia(8%) saturate(1883%)
 		hue-rotate(183deg) brightness(101%) contrast(83%);
 	--top-menu-border-color: #171c28;
+	--menu-column-icon-color: brightness(0) saturate(100%) invert(90%) sepia(3%) saturate(54%)
+		hue-rotate(202deg) brightness(101%) contrast(102%);
+
+	@include abstracts.breakpoint(lg) {
+		--header-shadow-color: rgba(0, 0, 0, 0.2);
+	}
 }
