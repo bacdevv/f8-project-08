@@ -10,10 +10,12 @@
 }
 
 .top-bar {
+	position: relative;
 	padding: 3rem 0;
 	@extend %flexItemCenter;
 
 	@include abstracts.breakpoint(lg) {
+		justify-content: space-between;
 		padding: 2rem 0;
 	}
 
@@ -43,7 +45,20 @@
 
 	&__list {
 		@extend %flexItemCenter;
-		gap: 3rem;
+	}
+
+	&__item {
+		&:hover .dropdown {
+			display: block;
+		}
+
+		&:first-child a {
+			padding-left: 0;
+		}
+
+		&:last-child a {
+			padding-right: 0;
+		}
 	}
 
 	&__link {
@@ -53,6 +68,8 @@
 		font-size: 1.5rem;
 		font-weight: 500;
 		line-height: 1.46;
+		height: 5rem;
+		padding: 0 1.5rem;
 	}
 
 	&__arrow {
@@ -64,6 +81,10 @@
 	@extend %flexItemCenter;
 	gap: 2rem;
 	margin-left: auto;
+
+	@include abstracts.breakpoint(lg) {
+		margin-left: 0;
+	}
 
 	&__group {
 		@extend %flexItemCenter;
