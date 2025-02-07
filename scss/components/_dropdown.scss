@@ -1,11 +1,11 @@
-@use '../abstracts';
+@use "../abstracts";
 
 .dropdown {
 	width: min(124rem, 100%);
 	padding-top: 5.4rem;
 	position: absolute;
 	left: 0;
-	display: none;
+	// display: none;
 
 	&__inner {
 		--inner-padding: 3rem;
@@ -28,13 +28,14 @@
 }
 
 .top-menu {
+	--main-column-width: 29.2rem;
+	--main-inner-height: calc(min(59.2rem, 100vh - 13.4rem) - var(--inner-padding) * 2);
+
 	position: relative;
 
 	&__main {
-		--main-column-width: 29.2rem;
-
 		width: var(--main-column-width);
-		height: calc(min(58.2rem, 100vh - 13.4rem) - var(--inner-padding) * 2);
+		height: var(--main-inner-height);
 		border-right: 0.1rem solid var(--top-menu-border-color);
 		overflow-y: auto;
 	}
@@ -90,11 +91,12 @@
 	}
 
 	&__item {
-		&:hover .sub-menu {
+		&--active .sub-menu {
 			display: grid;
 		}
 	}
 
+	&__item--active > &__link,
 	&__item:hover > &__link {
 		color: #0071dc;
 		font-weight: 500;
@@ -117,4 +119,13 @@
 	padding-left: var(--inner-padding);
 
 	overflow-y: auto;
+
+	&--not-main {
+		position: initial;
+		inset: inherit;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		height: var(--main-inner-height);
+		padding-left: 0;
+	}
 }
