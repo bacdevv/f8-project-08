@@ -1401,6 +1401,7 @@ html.dark {
   padding-top: 5.4rem;
   position: absolute;
   left: 0;
+  display: none;
 }
 .dropdown__inner {
   --inner-padding: 3rem;
