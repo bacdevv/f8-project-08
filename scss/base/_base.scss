@@ -16,10 +16,11 @@ body {
 }
 
 a {
-	color: inherit;
 	text-decoration: none;
 }
 
+a,
+img,
 button,
 select,
 textarea,
@@ -27,6 +28,7 @@ input {
 	color: inherit;
 	font-size: inherit;
 	font-family: inherit;
+	-webkit-tap-highlight-color: transparent;
 }
 
 button {

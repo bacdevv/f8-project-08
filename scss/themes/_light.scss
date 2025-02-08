@@ -2,8 +2,7 @@
 
 html {
 	--text-color: #1a162e;
-	--icon-color: brightness(0) saturate(100%) invert(6%) sepia(37%) saturate(2393%)
-		hue-rotate(227deg) brightness(92%) contrast(93%);
+	--icon-color: brightness(0) saturate(100%) invert(6%) sepia(37%) saturate(2393%) hue-rotate(227deg) brightness(92%) contrast(93%);
 
 	--body-bg: #f6f6f6;
 	--header-bg-color: #eee;
@@ -14,10 +13,13 @@ html {
 	// Dropdown
 	--dropdown-bg-color: #fff;
 	--dropdown-shadow-color: rgba(200, 200, 200, 0.4);
-	--dropdown-arrow-color: brightness(0) saturate(100%) invert(99%) sepia(2%) saturate(1106%)
-		hue-rotate(184deg) brightness(115%) contrast(100%);
+	--dropdown-arrow-color: brightness(0) saturate(100%) invert(99%) sepia(2%) saturate(1106%) hue-rotate(184deg) brightness(115%) contrast(100%);
 
 	--top-menu-border-color: #d2d1d6;
+
+	// Sidebar
+	--sidebar-bg: #fff;
+	--sidebar-shadow: rgba(200, 200, 200, 0.4);
 
 	@include abstracts.breakpoint(lg) {
 		--header-bg-color: #fff;

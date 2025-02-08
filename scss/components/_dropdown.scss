@@ -24,6 +24,24 @@
 			filter: var(--dropdown-arrow-color);
 			translate: -50%;
 		}
+
+		@include abstracts.breakpoint(lg) {
+			border-radius: 0;
+			background: transparent;
+			box-shadow: none;
+			padding: 0 1.5rem;
+		}
+
+		@include abstracts.breakpoint(lg) {
+			&::before {
+				content: "";
+			}
+		}
+	}
+
+	@include abstracts.breakpoint(lg) {
+		position: initial;
+		padding-top: 0;
 	}
 }
 
@@ -37,13 +55,22 @@
 		width: var(--main-column-width);
 		height: var(--main-inner-height);
 		border-right: 0.1rem solid var(--top-menu-border-color);
-		overflow-y: auto;
+
+		@include abstracts.breakpoint(lg) {
+			border-right: none;
+		}
 	}
 }
 
 .menu-column {
 	display: flex;
 	gap: 1.4rem;
+
+	@include abstracts.breakpoint(lg) {
+		&:hover &__list {
+			display: grid;
+		}
+	}
 
 	+ .menu-column {
 		margin-top: 2.2rem;
@@ -88,6 +115,10 @@
 
 	&__list {
 		margin-top: 1.9rem;
+
+		@include abstracts.breakpoint(lg) {
+			margin: 0;
+		}
 	}
 
 	&__item {
@@ -127,5 +158,19 @@
 		grid-template-columns: repeat(4, 1fr);
 		height: var(--main-inner-height);
 		padding-left: 0;
+	}
+
+	@include abstracts.breakpoint(lg) {
+		position: initial;
+		display: none;
+		grid-template-columns: 1fr;
+		padding: 1rem 0;
+		overflow-y: auto;
+	}
+
+	& .menu-column__icon {
+		@include abstracts.breakpoint(lg) {
+			display: block;
+		}
 	}
 }
