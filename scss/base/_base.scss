@@ -38,6 +38,11 @@ button {
 	cursor: pointer;
 }
 
+img {
+	user-select: none;
+	pointer-events: none;
+}
+
 .icon {
 	filter: var(--icon-color);
 }
