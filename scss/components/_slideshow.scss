@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 .slideshow {
 	position: relative;
 	margin: 4rem 0;
@@ -8,13 +10,24 @@
 	}
 
 	&__item {
+		position: relative;
 		width: 100%;
 		flex-shrink: 0;
+		padding-top: 34%;
+
+		@include abstracts.breakpoint(md) {
+			padding-top: 50%;
+		}
 	}
 
 	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
 		width: 100%;
+		height: 100%;
 		border-radius: 2rem;
+		object-fit: cover;
 	}
 
 	&__slider {
@@ -25,13 +38,18 @@
 		column-gap: 2.3rem;
 		position: absolute;
 		color: var(--color);
-		bottom: 7rem;
-		left: 7rem;
+		bottom: 15%;
+		left: 5.2%;
 
 		&-num {
 			font-size: 1.8rem;
 			font-weight: 500;
 			line-height: 1.4;
+
+			@include abstracts.breakpoint(md) {
+				font-size: 1.4rem;
+				line-height: 1.42;
+			}
 		}
 
 		&-stick {
@@ -51,6 +69,10 @@
 				border-radius: 50%;
 				display: inline-block;
 				top: 50%;
+
+				@include abstracts.breakpoint(md) {
+					border-width: 0.3rem;
+				}
 			}
 
 			&::before {
@@ -61,6 +83,10 @@
 			&::after {
 				right: 0;
 				translate: 90% -50%;
+			}
+
+			@include abstracts.breakpoint(md) {
+				width: 7.4rem;
 			}
 		}
 	}
