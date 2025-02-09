@@ -8,7 +8,7 @@
 .header {
 	background: var(--header-bg-color);
 
-	@include abstracts.breakpoint(lg) {
+	@include abstracts.screen(lg) {
 		box-shadow: 0px 20px 60px 10px var(--header-shadow-color);
 	}
 }
@@ -19,12 +19,12 @@
 	z-index: 1;
 	@extend %flexItemCenter;
 
-	@include abstracts.breakpoint(lg) {
+	@include abstracts.screen(lg) {
 		justify-content: space-between;
 		padding: 2rem 0;
 	}
 
-	@include abstracts.breakpoint(sm) {
+	@include abstracts.screen(sm) {
 		padding: 1.6rem 0;
 	}
 }
@@ -32,11 +32,11 @@
 .navbar {
 	margin-left: 12.9rem;
 
-	@include abstracts.breakpoint(xl) {
+	@include abstracts.screen(xl) {
 		margin-left: 3rem;
 	}
 
-	@include abstracts.breakpoint(lg) {
+	@include abstracts.screen(lg) {
 		position: fixed;
 		inset: 0 50% 0 0;
 		z-index: 9;
@@ -62,7 +62,7 @@
 		}
 	}
 
-	@include abstracts.breakpoint(sm) {
+	@include abstracts.screen(sm) {
 		inset: 0 20% 0 0;
 		padding: 1rem 1rem 0 0;
 	}
@@ -71,7 +71,7 @@
 		display: none;
 		padding: 1rem 2rem;
 
-		@include abstracts.breakpoint(lg) {
+		@include abstracts.screen(lg) {
 			display: block;
 		}
 	}
@@ -82,7 +82,7 @@
 		transition: opacity, visibility;
 		transition-duration: 0.5s;
 
-		@include abstracts.breakpoint(lg) {
+		@include abstracts.screen(lg) {
 			position: fixed;
 			inset: 0;
 			z-index: 8;
@@ -93,7 +93,7 @@
 	&__list {
 		@extend %flexItemCenter;
 
-		@include abstracts.breakpoint(lg) {
+		@include abstracts.screen(lg) {
 			flex-direction: column;
 			align-items: flex-start;
 			overflow-y: auto;
@@ -106,7 +106,7 @@
 			display: block;
 		}
 
-		@include abstracts.breakpoint(lg) {
+		@include abstracts.screen(lg) {
 			width: 100%;
 
 			&:hover .sub-menu--not-main {
@@ -138,7 +138,7 @@
 		height: 5rem;
 		padding: 0 1.5rem;
 
-		@include abstracts.breakpoint(lg) {
+		@include abstracts.screen(lg) {
 			justify-content: space-between;
 		}
 	}
@@ -146,7 +146,7 @@
 	&__arrow {
 		margin-top: 0.3rem;
 
-		@include abstracts.breakpoint(lg) {
+		@include abstracts.screen(lg) {
 			rotate: -90deg;
 		}
 	}
@@ -157,7 +157,7 @@
 	gap: 2rem;
 	margin-left: auto;
 
-	@include abstracts.breakpoint(lg) {
+	@include abstracts.screen(lg) {
 		margin-left: 0;
 	}
 
@@ -176,7 +176,7 @@
 		&--single {
 			padding: 1.3rem;
 
-			@include abstracts.breakpoint(lg) {
+			@include abstracts.screen(lg) {
 				display: none;
 			}
 		}
@@ -226,7 +226,7 @@
 		margin-left: auto;
 	}
 
-	@include abstracts.breakpoint(sm) {
+	@include abstracts.screen(sm) {
 		height: 4rem;
 	}
 }
