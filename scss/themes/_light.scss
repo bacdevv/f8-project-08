@@ -21,6 +21,21 @@ html {
 	--sidebar-bg: #fff;
 	--sidebar-shadow: rgba(200, 200, 200, 0.4);
 
+	// Category Item
+	--cate-item-bg: #eee;
+	--cate-item-md-bg: #fff;
+	--cate-item-img-bg: #fff;
+	--cate-item-title-color: #000;
+
+	// Buttons
+	--filter-btn-color: #6c6c72;
+	--filter-btn-bg: #fff;
+
+	// Product Card
+	--product-card-bg: #fff;
+	--product-card-shadow: rgba(237, 237, 246, 0.2);
+	--product-card-title: #1a162e;
+
 	@include abstracts.screen(lg) {
 		--header-bg-color: #fff;
 		--header-shadow-color: rgba(237, 237, 246, 0.2);
