@@ -179,8 +179,30 @@ img {
   pointer-events: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .icon {
   filter: var(--icon-color);
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
 }
 
 .row > *, .container-fluid, .container {
@@ -1914,15 +1936,19 @@ html.dark {
   border-radius: 50%;
   box-shadow: 0px 20px 60px rgba(124, 124, 124, 0.2);
 }
+.like-btn:not(.like-btn--liked) .like-btn__icon--liked {
+  display: none;
+}
+.like-btn--liked .like-btn__icon {
+  display: none;
+}
 
 .product-card {
+  height: 100%;
   padding: 1.6rem;
   border-radius: 2rem;
   background: var(--product-card-bg);
   box-shadow: 0px 20px 60px 10px var(--product-card-shadow);
-}
-.product-card__list {
-  margin-top: 2rem;
 }
 .product-card__wrap {
   position: relative;
@@ -1977,7 +2003,6 @@ html.dark {
   line-height: 1.41;
 }
 .home__cate {
-  margin-top: 2rem;
   --grid-gutter-x: 5rem;
   display: flex;
 }
@@ -1995,6 +2020,7 @@ html.dark {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
