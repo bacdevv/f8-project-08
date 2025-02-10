@@ -25,7 +25,6 @@ html.dark {
 	--cate-item-bg: #171c28;
 	--cate-item-md-bg: #171c28;
 	--cate-item-img-bg: #292e39;
-	--cate-item-title-color: #fff;
 
 	// Buttons
 	--filter-btn-color: #fff;
@@ -34,7 +33,7 @@ html.dark {
 	// Product Card
 	--product-card-bg: #171c28;
 	--product-card-shadow: rgba(0, 0, 0, 0.2);
-	--product-card-title: #fff;
+	--filter-slider-circle-bg: #292e39;
 
 	@include abstracts.screen(lg) {
 		--header-shadow-color: rgba(0, 0, 0, 0.2);

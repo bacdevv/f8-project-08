@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -96,10 +96,48 @@
 			<div class="home__container">
 				<div class="home__row">
 					<h2 class="home__heading">Total LavAzza 1320</h2>
-					<button class="filter-btn">
-						Filter
-						<img src="./assets/icons/filter.svg" alt="Filter" class="home__filter-btn icon" />
-					</button>
+					<div class="filter-wrap">
+						<button class="filter-btn">
+							Filter
+							<img src="./assets/icons/filter.svg" alt="Filter" class="home__filter-btn icon" />
+						</button>
+
+						<div class="filter">
+							<form action="" class="filter__form">
+								<h3 class="filter__heading">Filter</h3>
+								<div class="filter__row">
+									<!-- Filter column 1 -->
+									<div class="filter__col">
+										<label for="" class="filter__label">Price</label>
+
+										<!-- Filter Slider -->
+										<div class="filter__form-group">
+											<div class="filter__form-slider" style="--min-slider: 10%; --max-slider: 60%"></div>
+										</div>
+
+										<!-- Filter Form Group Inline -->
+										<div class="filter__form-group filter__form-group--inline">
+											<div>
+												<label class="filter__label filter__label--small">Minimum</label>
+												<input type="text" class="filter__input" value="$30.00" readonly />
+											</div>
+
+											<div>
+												<label class="filter__label filter__label--small">Maximum</label>
+												<input type="text" class="filter__input" value="$100.00" readonly />
+											</div>
+										</div>
+									</div>
+
+									<!-- Filter column 2 -->
+									<div class="filter__col"></div>
+
+									<!-- Filter column 3 -->
+									<div class="filter__col"></div>
+								</div>
+							</form>
+						</div>
+					</div>
 				</div>
 
 				<div class="product-card__list row row-cols-4 row-cols-lg-2 row-cols-md-1 g-3">
