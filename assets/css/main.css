@@ -1352,7 +1352,7 @@ html {
   --filter-btn-bg: #fff;
   --product-card-bg: #fff;
   --product-card-shadow: rgba(237, 237, 246, 0.2);
-  --filter-bg: #292e39;
+  --filter-bg: #fff;
   --filter-shadow: rgba(0, 0, 0, 0.4);
   --filter-slider-circle-bg: #fff;
 }
@@ -1383,9 +1383,12 @@ html.dark {
   --cate-item-img-bg: #292e39;
   --filter-btn-color: #fff;
   --filter-btn-bg: #171c28;
-  --product-card-bg: #171c28;
-  --product-card-shadow: rgba(0, 0, 0, 0.2);
-  --filter-slider-circle-bg: #292e39;
+  --filter-bg: #292e39;
+  --filter-shadow: rgba(0, 0, 0, 0.4);
+  --filter-slider-circle-bg: #fff;
+  --filter-bg: #292e39;
+  --filter-shadow: rgba(0, 0, 0, 0.4);
+  --filter-slider-circle-bg: #fff;
 }
 @media (max-width: 991.98px) {
   html.dark {
@@ -2017,7 +2020,7 @@ html.dark {
   gap: 3rem;
 }
 .filter__label {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   display: block;
 }
 .filter__label--small {
@@ -2025,7 +2028,7 @@ html.dark {
   line-height: 1.42;
 }
 .filter__form-group {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 .filter__form-group--inline {
   display: flex;
@@ -2035,6 +2038,7 @@ html.dark {
   position: relative;
   min-width: 27.2rem;
   height: 0.2rem;
+  margin: 3rem 0;
   background: #d2d1d6;
 }
 .filter__form-slider::before, .filter__form-slider::after {
@@ -2056,11 +2060,57 @@ html.dark {
 .filter__form-slider::after {
   left: var(--max-slider);
 }
+.filter__form-select-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.4rem;
+  height: 4.5rem;
+  padding: 0.5rem 1.4rem;
+  border: 0.1rem solid #d2d1d6;
+  border-radius: 0.6rem;
+}
+.filter__form-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: var(--width, 8rem);
+  height: calc(100% - 1rem);
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.42;
+  padding: 0 1.4rem;
+  cursor: pointer;
+}
+.filter__form-select + .filter__form-select {
+  border-left: 0.1rem solid #eee;
+  gap: 1.4rem;
+}
+.filter__form-tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+}
+.filter__form-tag {
+  color: #9e9da8;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.42;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.6rem;
+  background: #f8f8fb;
+  cursor: pointer;
+}
 .filter__input {
   height: 3.6rem;
   padding: 0 1.2rem;
   border-radius: 0.6rem;
   border: 0.1rem solid #d2d1d6;
+}
+.filter__separate {
+  width: 0.1rem;
+  background: #ccc;
 }
 
 .home__container {

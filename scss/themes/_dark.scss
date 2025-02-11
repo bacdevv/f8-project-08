@@ -31,9 +31,16 @@ html.dark {
 	--filter-btn-bg: #171c28;
 
 	// Product Card
-	--product-card-bg: #171c28;
-	--product-card-shadow: rgba(0, 0, 0, 0.2);
-	--filter-slider-circle-bg: #292e39;
+	--filter-bg: #292e39;
+	--filter-shadow: rgba(0, 0, 0, 0.4);
+	--filter-slider-circle-bg: #fff;
+
+	// Filter
+	--filter-bg: #292e39;
+	--filter-shadow: rgba(0, 0, 0, 0.4);
+	--filter-slider-circle-bg: #fff;
+
+
 
 	@include abstracts.screen(lg) {
 		--header-shadow-color: rgba(0, 0, 0, 0.2);

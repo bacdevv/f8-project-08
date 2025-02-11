@@ -35,9 +35,10 @@ html {
 	--product-card-shadow: rgba(237, 237, 246, 0.2);
 
 	// Filter
-	--filter-bg: #292e39;
+	--filter-bg: #fff;
 	--filter-shadow: rgba(0, 0, 0, 0.4);
 	--filter-slider-circle-bg: #fff;
+
 
 	@include abstracts.screen(lg) {
 		--header-bg-color: #fff;
