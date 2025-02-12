@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -98,15 +98,16 @@
 					<div class="home__row">
 						<h2 class="home__heading">Total LavAzza 1320</h2>
 						<div class="filter-wrap">
-							<button class="filter-btn">
+							<button class="filter-btn js-toggle" toggle-target="#filter">
 								Filter
 								<img src="./assets/icons/filter.svg" alt="Filter" class="home__filter-btn icon" />
 							</button>
 
-							<div class="filter">
+							<div id="filter" class="filter hide">
+								<img src="./assets/icons/arrrow-up.png" alt="" class="filter__arrow-up" />
 								<form action="" class="filter__form">
 									<h3 class="filter__heading">Filter</h3>
-									<div class="filter__row">
+									<div class="filter__row filter__content">
 										<!-- Filter column 1 -->
 										<div class="filter__col">
 											<label for="" class="filter__label">Price</label>
@@ -191,13 +192,18 @@
 												<!-- Filter Tags -->
 												<div class="filter__form-group">
 													<div class="filter__form-tags">
-														<div class="filter__form-tag">Small</div>
-														<div class="filter__form-tag">Medium</div>
-														<div class="filter__form-tag">Large</div>
+														<div class="filter__form-tag">Lavazza</div>
+														<div class="filter__form-tag">Nescafe</div>
+														<div class="filter__form-tag">Starbucks</div>
 													</div>
 												</div>
 											</div>
 										</div>
+									</div>
+
+									<div class="filter__row filter__footer">
+										<button class="btn btn--text js-toggle" toggle-target="#filter">Cancel</button>
+										<button class="btn btn--primary js-toggle" toggle-target="#filter">Show Result</button>
 									</div>
 								</form>
 							</div>

@@ -26,21 +26,18 @@ html.dark {
 	--cate-item-md-bg: #171c28;
 	--cate-item-img-bg: #292e39;
 
-	// Buttons
-	--filter-btn-color: #fff;
-	--filter-btn-bg: #171c28;
-
 	// Product Card
-	--filter-bg: #292e39;
-	--filter-shadow: rgba(0, 0, 0, 0.4);
-	--filter-slider-circle-bg: #fff;
+	--product-card-bg: #171c28;
+	--product-card-shadow: rgba(0, 0, 0, 0.2);
 
 	// Filter
 	--filter-bg: #292e39;
-	--filter-shadow: rgba(0, 0, 0, 0.4);
+	--filter-btn-bg: #171c28;
+	--filter-tag-bg: #171c28;
+	--filter-icon-bg: var(--dropdown-arrow-color);
 	--filter-slider-circle-bg: #fff;
-
-
+	--filter-shadow: rgba(0, 0, 0, 0.4);
+	--filter-btn-color: #fff;
 
 	@include abstracts.screen(lg) {
 		--header-shadow-color: rgba(0, 0, 0, 0.2);

@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 .filter-wrap {
 	position: relative;
 }
@@ -14,6 +16,25 @@
 	background: var(--filter-bg);
 	filter: drop-shadow(0px 40px 90px var(--filter-shadow));
 
+	&.hide {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	&__content {
+		@include abstracts.screen(xl) {
+			flex-direction: column;
+		}
+	}
+
+	&__arrow-up {
+		height: 2rem;
+		position: absolute;
+		top: -1.2rem;
+		right: 2rem;
+		filter: var(--filter-icon-bg);
+	}
+
 	&__heading {
 		font-size: 2.2rem;
 		font-weight: 500;
@@ -24,6 +45,10 @@
 	&__row {
 		display: flex;
 		gap: 3rem;
+
+		@include abstracts.screen(xl) {
+			gap: 1rem;
+		}
 	}
 
 	&__label {
@@ -38,12 +63,18 @@
 	}
 
 	&__form {
+		overflow: hidden;
+
 		&-group {
 			margin-top: 2rem;
 
 			&--inline {
 				display: flex;
 				gap: 3rem;
+			}
+
+			> * {
+				flex: 1;
 			}
 		}
 
@@ -87,7 +118,7 @@
 			gap: 1.4rem;
 			height: 4.5rem;
 
-			padding: 0.5rem 1.4rem;
+			padding: 0.5rem 0;
 			border: 0.1rem solid #d2d1d6;
 			border-radius: 0.6rem;
 		}
@@ -127,8 +158,13 @@
 			line-height: 1.42;
 			padding: 0.6rem 1.2rem;
 			border-radius: 0.6rem;
-			background: #f8f8fb;
+			background: var(--filter-tag-bg);
 			cursor: pointer;
+			transition: color 0.3s ease;
+
+			&:hover {
+				color: var(--text-color);
+			}
 		}
 
 		&-input-wrap {
@@ -136,6 +172,7 @@
 			align-items: center;
 			padding: 1rem 1.6rem;
 			min-width: 33.4rem;
+			max-width: 100%;
 			border-radius: 0.6rem;
 			border: 0.1rem solid #d2d1d6;
 		}
@@ -168,5 +205,40 @@
 	&__separate {
 		width: 0.1rem;
 		background: #ccc;
+	}
+
+	&__footer {
+		margin-top: 1.8rem;
+		justify-content: flex-end;
+		gap: 0;
+		background: var(--filter-bg);
+
+		@include abstracts.screen(xl) {
+			position: sticky;
+			bottom: 0;
+			padding-bottom: 1rem;
+
+			> * {
+				flex: 1;
+			}
+		}
+	}
+
+	@include abstracts.screen(xl) {
+		height: 80vh;
+		overflow-y: scroll;
+		padding-bottom: 0;
+	}
+
+	@include abstracts.screen(xl) {
+		width: 80vw;
+		height: 100vh;
+	}
+
+	@include abstracts.screen(sm) {
+		.btn {
+			font-size: 1.5rem;
+			padding: 1rem 0;
+		}
 	}
 }

@@ -36,9 +36,9 @@ html {
 
 	// Filter
 	--filter-bg: #fff;
+	--filter-tag-bg: #f8f8fb;
 	--filter-shadow: rgba(0, 0, 0, 0.4);
 	--filter-slider-circle-bg: #fff;
-
 
 	@include abstracts.screen(lg) {
 		--header-bg-color: #fff;
