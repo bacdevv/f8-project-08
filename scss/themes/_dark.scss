@@ -1,48 +1,45 @@
 @use "../abstracts";
 
 html.dark {
-	--text-color: #fff;
-	--icon-color: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg) brightness(106%) contrast(106%);
+  --text-color: #fff;
+  --icon-color: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg) brightness(106%) contrast(106%);
 
-	--body-bg: #292e39;
-	--header-bg-color: #171c28;
-	--top-act-group-bg-color: #292e39;
-	--top-act-shadow: rgba(0, 0, 0, 0.2);
-	--top-act-group-separate: #ededf6;
+  --body-bg: #292e39;
+  --header-bg-color: #171c28;
+  --top-act-group-bg-color: #292e39;
+  --top-act-shadow: rgba(0, 0, 0, 0.2);
+  --top-act-group-separate: #ededf6;
 
-	// Dropdown
-	--dropdown-bg-color: #2e3441;
-	--dropdown-shadow-color: rgba(23, 28, 40, 0.4);
-	--dropdown-arrow-color: brightness(0) saturate(100%) invert(14%) sepia(8%) saturate(1883%) hue-rotate(183deg) brightness(101%) contrast(83%);
-	--top-menu-border-color: #171c28;
-	--menu-column-icon-color: brightness(0) saturate(100%) invert(90%) sepia(3%) saturate(54%) hue-rotate(202deg) brightness(101%) contrast(102%);
+  // Dropdown
+  --dropdown-bg-color: #2e3441;
+  --dropdown-shadow-color: rgba(23, 28, 40, 0.4);
+  --dropdown-arrow-color: brightness(0) saturate(100%) invert(14%) sepia(8%) saturate(1883%) hue-rotate(183deg) brightness(101%) contrast(83%);
+  --top-menu-border-color: #171c28;
+  --menu-column-icon-color: brightness(0) saturate(100%) invert(90%) sepia(3%) saturate(54%) hue-rotate(202deg) brightness(101%) contrast(102%);
 
-	// Sidebar
-	--sidebar-bg: #292e39;
-	--sidebar-shadow: rgba(23, 28, 40, 0.4);
+  // Sidebar
+  --sidebar-bg: #292e39;
+  --sidebar-shadow: rgba(23, 28, 40, 0.4);
 
-	// Category Item
-	--cate-item-bg: #171c28;
-	--cate-item-md-bg: #171c28;
-	--cate-item-img-bg: #292e39;
+  // Category Item
+  --cate-item-bg: #171c28;
+  --cate-item-md-bg: #171c28;
+  --cate-item-img-bg: #292e39;
 
-	// Buttons
-	--filter-btn-color: #fff;
-	--filter-btn-bg: #171c28;
+  // Product Card
+  --product-card-bg: #171c28;
+  --product-card-shadow: rgba(0, 0, 0, 0.2);
 
-	// Product Card
-	--filter-bg: #292e39;
-	--filter-shadow: rgba(0, 0, 0, 0.4);
-	--filter-slider-circle-bg: #fff;
+  // Filter
+  --filter-bg: #292e39;
+  --filter-btn-bg: #171c28;
+  --filter-tag-bg: #171c28;
+  --filter-icon-bg: var(--dropdown-arrow-color);
+  --filter-slider-circle-bg: #fff;
+  --filter-shadow: rgba(0, 0, 0, 0.4);
+  --filter-btn-color: #fff;
 
-	// Filter
-	--filter-bg: #292e39;
-	--filter-shadow: rgba(0, 0, 0, 0.4);
-	--filter-slider-circle-bg: #fff;
-
-
-
-	@include abstracts.screen(lg) {
-		--header-shadow-color: rgba(0, 0, 0, 0.2);
-	}
+  @include abstracts.screen(lg) {
+    --header-shadow-color: rgba(0, 0, 0, 0.2);
+  }
 }

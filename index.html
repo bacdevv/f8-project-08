@@ -1,322 +1,333 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Grocerymart</title>
+<html class="dark" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Grocerymart</title>
 
-		<!-- Favicon -->
-		<link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
-		<link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
-		<link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
-		<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
-		<link rel="manifest" href="./assets/favicon/site.webmanifest" />
-		<!-- Fonts -->
-		<link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+    <!-- Favicon -->
+    <link href="./assets/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+    <link href="./assets/favicon/favicon.svg" rel="icon" type="image/svg+xml"/>
+    <link href="./assets/favicon/favicon.ico" rel="shortcut icon"/>
+    <link href="./assets/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+    <link href="./assets/favicon/site.webmanifest" rel="manifest"/>
+    <!-- Fonts -->
+    <link href="./assets/fonts/stylesheet.css" rel="stylesheet"/>
 
-		<!-- Stylesheet CSS -->
-		<link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- Stylesheet CSS -->
+    <link href="./assets/css/main.css" rel="stylesheet"/>
 
-		<!-- Scripts -->
-		<script src="./assets/js/scripts.js"></script>
-	</head>
-	<body style="height: 5000px">
-		<!-- Header -->
-		<header id="header" class="header"></header>
-		<script>
-			load("#header", "./templates/header.html");
-		</script>
+    <!-- Scripts -->
+    <script src="./assets/js/scripts.js"></script>
+</head>
+<body style="height: 5000px">
+<!-- Header -->
+<header class="header" id="header"></header>
+<script>
+    load("#header", "./templates/header.html");
+</script>
 
-		<!-- Main -->
-		<main>
-			<div class="container home">
-				<div class="home__container">
-					<div class="slideshow">
-						<div class="slideshow__inner">
-							<!-- Slideshow Item 1 -->
-							<figure class="slideshow__item">
-								<a href="#!" class="slideshow__link">
-									<picture>
-										<source media="(max-width: 767.98px)" srcset="./assets/img/slideshow-md.png" />
-										<img src="./assets/img/slideshow-img.png" alt="Slideshow img" class="slideshow__img" />
-									</picture>
-								</a>
-							</figure>
-						</div>
+<!-- Main -->
+<main>
+    <div class="container home">
+        <div class="home__container">
+            <div class="slideshow__inner">
+                <!-- Slideshow Item 1 -->
+                <figure class="slideshow__item">
+                    <a class="slideshow__link" href="#!">
+                        <picture>
+                            <source media="(max-width: 767.98px)" srcset="./assets/img/slideshow-md.png"/>
+                            <img alt="Slideshow img" class="slideshow__img" src="./assets/img/slideshow-img.png"/>
+                        </picture>
+                    </a>
+                </figure>
+                <div class="slideshow__slider">
+                    <span class="slideshow__slider-num">1</span>
+                    <span class="slideshow__slider-stick"></span>
+                    <span class="slideshow__slider-num">5</span>
+                </div>
+            </div>
+        </div>
 
-						<div class="slideshow__slider">
-							<span class="slideshow__slider-num">1</span>
-							<span class="slideshow__slider-stick"></span>
-							<span class="slideshow__slider-num">5</span>
-						</div>
-					</div>
-				</div>
 
-				<!-- Browse Category -->
-				<div class="home__container">
-					<div class="home__row">
-						<h2 class="home__heading">Browse Categories</h2>
-					</div>
-					<div class="home__cate row row-cols-3 row-cols-lg-1">
-						<div class="col">
-							<!-- Category Item 1 -->
-							<article class="cate-item">
-								<img src="./assets/img/category-item/item-1.png" alt="Product" class="cate-item__img" />
-								<div class="cate-item__content">
-									<h3 class="cate-item__title">$24 - $150</h3>
-									<p class="cate-item__desc">New sumatra mandeling coffe blend</p>
-								</div>
-							</article>
-						</div>
+        <!-- Browse Category -->
+        <section class="home__container">
+            <div class="home__row">
+                <h2 class="home__heading">Browse Categories</h2>
+            </div>
+            <div class="home__cate row row-cols-3 row-cols-lg-1">
+                <div class="col">
+                    <!-- Category Item 1 -->
+                    <article class="cate-item">
+                        <img alt="Product" class="cate-item__img" src="./assets/img/category-item/item-1.png"/>
+                        <div class="cate-item__content">
+                            <h3 class="cate-item__title">$24 - $150</h3>
+                            <p class="cate-item__desc">New sumatra mandeling coffe blend</p>
+                        </div>
+                    </article>
+                </div>
 
-						<div class="col">
-							<!-- Category Item 2 -->
-							<article class="cate-item">
-								<img src="./assets/img/category-item/item-2.png" alt="Product" class="cate-item__img" />
-								<div class="cate-item__content">
-									<h3 class="cate-item__title">$37 - $160</h3>
-									<p class="cate-item__desc">Espresso arabica and robusta beans</p>
-								</div>
-							</article>
-						</div>
+                <div class="col">
+                    <!-- Category Item 2 -->
+                    <article class="cate-item">
+                        <img alt="Product" class="cate-item__img" src="./assets/img/category-item/item-2.png"/>
+                        <div class="cate-item__content">
+                            <h3 class="cate-item__title">$37 - $160</h3>
+                            <p class="cate-item__desc">Espresso arabica and robusta beans</p>
+                        </div>
+                    </article>
+                </div>
 
-						<div class="col">
-							<!-- Category Item 3 -->
-							<article class="cate-item">
-								<img src="./assets/img/category-item/item-3.png" alt="Product" class="cate-item__img" />
-								<div class="cate-item__content">
-									<h3 class="cate-item__title">$32 - $160</h3>
-									<p class="cate-item__desc">Lavazza top class whole bean coffee blend</p>
-								</div>
-							</article>
-						</div>
-					</div>
-				</div>
+                <div class="col">
+                    <!-- Category Item 3 -->
+                    <article class="cate-item">
+                        <img alt="Product" class="cate-item__img" src="./assets/img/category-item/item-3.png"/>
+                        <div class="cate-item__content">
+                            <h3 class="cate-item__title">$32 - $160</h3>
+                            <p class="cate-item__desc">Lavazza top class whole bean coffee blend</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-				<!-- Browse Product -->
-				<div class="home__container">
-					<div class="home__row">
-						<h2 class="home__heading">Total LavAzza 1320</h2>
-						<div class="filter-wrap">
-							<button class="filter-btn">
-								Filter
-								<img src="./assets/icons/filter.svg" alt="Filter" class="home__filter-btn icon" />
-							</button>
+        <!-- Browse Product -->
+        <section class="home__container">
+            <div class="home__row">
+                <h2 class="home__heading">Total LavAzza 1320</h2>
+                <div class="filter-wrap">
+                    <button class="filter-btn js-toggle" toggle-target="#filter">
+                        Filter
+                        <img alt="Filter" class="home__filter-btn icon" src="./assets/icons/filter.svg"/>
+                    </button>
 
-							<div class="filter">
-								<form action="" class="filter__form">
-									<h3 class="filter__heading">Filter</h3>
-									<div class="filter__row">
-										<!-- Filter column 1 -->
-										<div class="filter__col">
-											<label for="" class="filter__label">Price</label>
+                    <div class="filter hide" id="filter">
+                        <img alt="" class="filter__arrow-up" src="./assets/icons/arrrow-up.png"/>
+                        <form action="" class="filter__form">
+                            <h3 class="filter__heading">Filter</h3>
+                            <div class="filter__row filter__content">
+                                <!-- Filter column 1 -->
+                                <div class="filter__col">
+                                    <label class="filter__label" for="">Price</label>
 
-											<!-- Filter Slider -->
-											<div class="filter__form-group">
-												<div class="filter__form-slider" style="--min-slider: 10%; --max-slider: 60%"></div>
-											</div>
+                                    <!-- Filter Slider -->
+                                    <div class="filter__form-group">
+                                        <div class="filter__form-slider"
+                                             style="--min-slider: 10%; --max-slider: 60%"></div>
+                                    </div>
 
-											<!-- Filter Form Group Inline -->
-											<div class="filter__form-group filter__form-group--inline">
-												<div>
-													<label class="filter__label filter__label--small">Minimum</label>
-													<input type="text" class="filter__input" value="$30.00" />
-												</div>
+                                    <!-- Filter Form Group Inline -->
+                                    <div class="filter__form-group filter__form-group--inline">
+                                        <div>
+                                            <label class="filter__label filter__label--small">Minimum</label>
+                                            <input class="filter__input" type="text" value="$30.00"/>
+                                        </div>
 
-												<div>
-													<label class="filter__label filter__label--small">Maximum</label>
-													<input type="text" class="filter__input" value="$100.00" />
-												</div>
-											</div>
-										</div>
+                                        <div>
+                                            <label class="filter__label filter__label--small">Maximum</label>
+                                            <input class="filter__input" type="text" value="$100.00"/>
+                                        </div>
+                                    </div>
+                                </div>
 
-										<div class="filter__separate"></div>
+                                <div class="filter__separate"></div>
 
-										<!-- Filter column 2 -->
-										<div class="filter__col">
-											<label for="" class="filter__label">Size/Weight</label>
+                                <!-- Filter column 2 -->
+                                <div class="filter__col">
+                                    <label class="filter__label" for="">Size/Weight</label>
 
-											<!-- Filter Select -->
-											<div class="filter__form-group">
-												<div class="filter__form-select-wrap">
-													<div class="filter__form-select" style="--width: 13rem">
-														500g
-														<img
-															src="./assets/icons/arrow-select.svg"
-															alt="Arrow down"
-															class="filter__form-select-arrow icon"
-														/>
-													</div>
+                                    <!-- Filter Select -->
+                                    <div class="filter__form-group">
+                                        <div class="filter__form-select-wrap">
+                                            <div class="filter__form-select" style="--width: 13rem">
+                                                500g
+                                                <img
+                                                        alt="Arrow down"
+                                                        class="filter__form-select-arrow icon"
+                                                        src="./assets/icons/arrow-select.svg"
+                                                />
+                                            </div>
 
-													<div class="filter__form-select">
-														Gram
-														<img
-															src="./assets/icons/arrow-select.svg"
-															alt="Arrow down"
-															class="filter__form-select-arrow icon"
-														/>
-													</div>
-												</div>
-											</div>
+                                            <div class="filter__form-select">
+                                                Gram
+                                                <img
+                                                        alt="Arrow down"
+                                                        class="filter__form-select-arrow icon"
+                                                        src="./assets/icons/arrow-select.svg"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
 
-											<!-- Filter Tags -->
-											<div class="filter__form-group">
-												<div class="filter__form-tags">
-													<div class="filter__form-tag">Small</div>
-													<div class="filter__form-tag">Medium</div>
-													<div class="filter__form-tag">Large</div>
-												</div>
-											</div>
-										</div>
+                                    <!-- Filter Tags -->
+                                    <div class="filter__form-group">
+                                        <div class="filter__form-tags">
+                                            <div class="filter__form-tag">Small</div>
+                                            <div class="filter__form-tag">Medium</div>
+                                            <div class="filter__form-tag">Large</div>
+                                        </div>
+                                    </div>
+                                </div>
 
-										<div class="filter__separate"></div>
+                                <div class="filter__separate"></div>
 
-										<!-- Filter column 3 -->
-										<div class="filter__col">
-											<div class="filter__col">
-												<label for="" class="filter__label">Brand</label>
+                                <!-- Filter column 3 -->
+                                <div class="filter__col">
+                                    <div class="filter__col">
+                                        <label class="filter__label" for="">Brand</label>
 
-												<!-- Filter Select -->
-												<div class="filter__form-group">
-													<div class="filter__form-input-wrap">
-														<input type="text" class="filter__form-input" placeholder="Search brand name" />
-														<img
-															src="./assets/icons/search.svg"
-															alt="Search Icon"
-															class="filter__form-search-icon icon"
-														/>
-													</div>
-												</div>
+                                        <!-- Filter Select -->
+                                        <div class="filter__form-group">
+                                            <div class="filter__form-input-wrap">
+                                                <input class="filter__form-input" placeholder="Search brand name"
+                                                       type="text"/>
+                                                <img
+                                                        alt="Search Icon"
+                                                        class="filter__form-search-icon icon"
+                                                        src="./assets/icons/search.svg"
+                                                />
+                                            </div>
+                                        </div>
 
-												<!-- Filter Tags -->
-												<div class="filter__form-group">
-													<div class="filter__form-tags">
-														<div class="filter__form-tag">Small</div>
-														<div class="filter__form-tag">Medium</div>
-														<div class="filter__form-tag">Large</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
+                                        <!-- Filter Tags -->
+                                        <div class="filter__form-group">
+                                            <div class="filter__form-tags">
+                                                <div class="filter__form-tag">Lavazza</div>
+                                                <div class="filter__form-tag">Nescafe</div>
+                                                <div class="filter__form-tag">Starbucks</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-					<div class="product-card__list row row-cols-4 row-cols-lg-2 row-cols-md-1 g-3">
-						<!-- Product Card 1 -->
-						<div class="col">
-							<article class="product-card">
-								<figure class="product-card__wrap">
-									<a href="#!">
-										<img src="./assets/img/product-card/item-01.png" alt="Coffee Lavazza" class="product-card__img" />
-									</a>
+                            <div class="filter__row filter__footer">
+                                <button class="btn btn--text js-toggle" toggle-target="#filter">Cancel</button>
+                                <button class="btn btn--primary js-toggle" toggle-target="#filter">Show Result</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
 
-									<button class="like-btn product-card__like-btn">
-										<img src="./assets/icons/heart.svg" alt="Heart" class="like-btn__icon icon" />
-										<img src="./assets/icons/heart-red.svg" alt="Heart" class="like-btn__icon--liked" />
-									</button>
-								</figure>
+            <div class="product-card__list row row-cols-4 row-cols-lg-2 row-cols-md-1 g-3">
+                <!-- Product Card 1 -->
+                <div class="col">
+                    <article class="product-card">
+                        <figure class="product-card__wrap">
+                            <a href="#!">
+                                <img alt="Coffee Lavazza" class="product-card__img"
+                                     src="./assets/img/product-card/item-01.png"/>
+                            </a>
 
-								<header class="product-card__content">
-									<h3 class="product-card__title">Coffee Beans - Espresso Arabica and Robusta Beans</h3>
-									<span class="product-card__brand">Lavazza</span>
-									<div class="product-card__row">
-										<strong class="product-card__pricing">$47.00</strong>
-										<img src="./assets/icons/star.svg" alt="" class="product-card__star" />
-										<b class="product-card__rate">4.3</b>
-									</div>
-								</header>
-							</article>
-						</div>
+                            <button class="like-btn product-card__like-btn">
+                                <img alt="Heart" class="like-btn__icon icon" src="./assets/icons/heart.svg"/>
+                                <img alt="Heart" class="like-btn__icon--liked" src="./assets/icons/heart-red.svg"/>
+                            </button>
+                        </figure>
 
-						<!-- Product Card 2 -->
-						<div class="col">
-							<article class="product-card">
-								<figure class="product-card__wrap">
-									<a href="#!">
-										<img src="./assets/img/product-card/item-02.png" alt="Coffee Lavazza" class="product-card__img" />
-									</a>
+                        <header class="product-card__content">
+                            <h3 class="product-card__title">Coffee Beans - Espresso Arabica and Robusta Beans</h3>
+                            <span class="product-card__brand">Lavazza</span>
+                            <div class="product-card__row">
+                                <strong class="product-card__pricing">$47.00</strong>
+                                <img alt="" class="product-card__star" src="./assets/icons/star.svg"/>
+                                <b class="product-card__rate">4.3</b>
+                            </div>
+                        </header>
+                    </article>
+                </div>
 
-									<button class="like-btn product-card__like-btn">
-										<img src="./assets/icons/heart.svg" alt="Heart" class="like-btn__icon icon" />
-										<img src="./assets/icons/heart-red.svg" alt="Heart" class="like-btn__icon--liked" />
-									</button>
-								</figure>
+                <!-- Product Card 2 -->
+                <div class="col">
+                    <article class="product-card">
+                        <figure class="product-card__wrap">
+                            <a href="#!">
+                                <img alt="Coffee Lavazza" class="product-card__img"
+                                     src="./assets/img/product-card/item-02.png"/>
+                            </a>
 
-								<header class="product-card__content">
-									<h3 class="product-card__title">Lavazza Coffee Blends - Try the Italian Espresso</h3>
-									<span class="product-card__brand">Lavazza</span>
-									<div class="product-card__row">
-										<strong class="product-card__pricing">$53.00</strong>
-										<img src="./assets/icons/star.svg" alt="" class="product-card__star" />
-										<b class="product-card__rate">3.4</b>
-									</div>
-								</header>
-							</article>
-						</div>
+                            <button class="like-btn product-card__like-btn">
+                                <img alt="Heart" class="like-btn__icon icon" src="./assets/icons/heart.svg"/>
+                                <img alt="Heart" class="like-btn__icon--liked" src="./assets/icons/heart-red.svg"/>
+                            </button>
+                        </figure>
 
-						<!-- Product Card 3 -->
-						<div class="col">
-							<article class="product-card">
-								<figure class="product-card__wrap">
-									<a href="#!">
-										<img src="./assets/img/product-card/item-03.png" alt="Coffee Lavazza" class="product-card__img" />
-									</a>
+                        <header class="product-card__content">
+                            <h3 class="product-card__title">Lavazza Coffee Blends - Try the Italian Espresso</h3>
+                            <span class="product-card__brand">Lavazza</span>
+                            <div class="product-card__row">
+                                <strong class="product-card__pricing">$53.00</strong>
+                                <img alt="" class="product-card__star" src="./assets/icons/star.svg"/>
+                                <b class="product-card__rate">3.4</b>
+                            </div>
+                        </header>
+                    </article>
+                </div>
 
-									<button class="like-btn--liked product-card__like-btn">
-										<img src="./assets/icons/heart.svg" alt="Heart" class="like-btn__icon icon" />
-										<img src="./assets/icons/heart-red.svg" alt="Heart" class="like-btn__icon--liked" />
-									</button>
-								</figure>
+                <!-- Product Card 3 -->
+                <div class="col">
+                    <article class="product-card">
+                        <figure class="product-card__wrap">
+                            <a href="#!">
+                                <img alt="Coffee Lavazza" class="product-card__img"
+                                     src="./assets/img/product-card/item-03.png"/>
+                            </a>
 
-								<header class="product-card__content">
-									<h3 class="product-card__title">Lavazza - Caffè Espresso Black Tin - Ground coffee</h3>
-									<span class="product-card__brand">Lavazza</span>
-									<div class="product-card__row">
-										<strong class="product-card__pricing">$99.99</strong>
-										<img src="./assets/icons/star.svg" alt="" class="product-card__star" />
-										<b class="product-card__rate">5.0</b>
-									</div>
-								</header>
-							</article>
-						</div>
+                            <button class="like-btn--liked product-card__like-btn">
+                                <img alt="Heart" class="like-btn__icon icon" src="./assets/icons/heart.svg"/>
+                                <img alt="Heart" class="like-btn__icon--liked" src="./assets/icons/heart-red.svg"/>
+                            </button>
+                        </figure>
 
-						<!-- Product Card 4 -->
-						<div class="col">
-							<article class="product-card">
-								<figure class="product-card__wrap">
-									<a href="#!">
-										<img src="./assets/img/product-card/item-04.png" alt="Coffee Lavazza" class="product-card__img" />
-									</a>
+                        <header class="product-card__content">
+                            <h3 class="product-card__title">Lavazza - Caffè Espresso Black Tin - Ground coffee</h3>
+                            <span class="product-card__brand">Lavazza</span>
+                            <div class="product-card__row">
+                                <strong class="product-card__pricing">$99.99</strong>
+                                <img alt="" class="product-card__star" src="./assets/icons/star.svg"/>
+                                <b class="product-card__rate">5.0</b>
+                            </div>
+                        </header>
+                    </article>
+                </div>
 
-									<button class="like-btn product-card__like-btn">
-										<img src="./assets/icons/heart.svg" alt="Heart" class="like-btn__icon icon" />
-										<img src="./assets/icons/heart-red.svg" alt="Heart" class="like-btn__icon--liked" />
-									</button>
-								</figure>
+                <!-- Product Card 4 -->
+                <div class="col">
+                    <article class="product-card">
+                        <figure class="product-card__wrap">
+                            <a href="#!">
+                                <img alt="Coffee Lavazza" class="product-card__img"
+                                     src="./assets/img/product-card/item-04.png"/>
+                            </a>
 
-								<header class="product-card__content">
-									<h3 class="product-card__title">Qualità Oro Mountain Grown - Espresso Coffee Beans</h3>
-									<span class="product-card__brand">Lavazza</span>
-									<div class="product-card__row">
-										<strong class="product-card__pricing">$38.65</strong>
-										<img src="./assets/icons/star.svg" alt="" class="product-card__star" />
-										<b class="product-card__rate">4.4</b>
-									</div>
-								</header>
-							</article>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
+                            <button class="like-btn product-card__like-btn">
+                                <img alt="Heart" class="like-btn__icon icon" src="./assets/icons/heart.svg"/>
+                                <img alt="Heart" class="like-btn__icon--liked" src="./assets/icons/heart-red.svg"/>
+                            </button>
+                        </figure>
 
-		<!-- Footer -->
-		<footer id="footer"></footer>
-		<script>
-			load("#footer", "./templates/footer.html");
-		</script>
-	</body>
+                        <header class="product-card__content">
+                            <h3 class="product-card__title">Qualità Oro Mountain Grown - Espresso Coffee Beans</h3>
+                            <span class="product-card__brand">Lavazza</span>
+                            <div class="product-card__row">
+                                <strong class="product-card__pricing">$38.65</strong>
+                                <img alt="" class="product-card__star" src="./assets/icons/star.svg"/>
+                                <b class="product-card__rate">4.4</b>
+                            </div>
+                        </header>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</main>
+
+<!-- Footer -->
+<footer id="footer"></footer>
+<script>
+    load("#footer", "./templates/footer.html");
+</script>
+</body>
 </html>

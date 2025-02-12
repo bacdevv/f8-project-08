@@ -32,3 +32,71 @@
 		display: none;
 	}
 }
+
+// Buttons
+.btn {
+	color: #1a162e;
+	font-weight: 500;
+	height: 4rem;
+	padding: 0 2rem;
+	background: #F8F8FB;
+	border-radius: .6rem;
+	user-select: none;
+
+	+ .btn {
+		margin-left: 2rem;
+	}
+
+	&--text {
+		color: #9E9DA8;
+		border: none;
+		background: transparent;
+	}
+
+	&--primary {
+		background: #FFB700;
+	}
+
+	&--outline {
+		border: .1rem solid var(--text-color);
+		background: transparent;
+	}
+
+	&--rounded {
+		border-radius: 99rem;
+	}
+
+	&:hover {
+		opacity: .9;
+		transition: opacity .25s ease;
+	}
+
+	&[disabled],
+	&--disabled {
+		opacity: 0.5;
+		pointer-events: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
